@@ -1,0 +1,84 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+.col {
+    width: 50%;
+    padding: 1rem;
+}
+.text-primary {
+    color: #7e4ed3 ;
+}
+
+.btn {
+    color: #fff;
+    padding: 0.6rem 2rem;
+    border-radius: 0.6rem;
+    display: block;
+    background: #7e4ed3;
+    width: max-content;
+}
+/*_base.css*/
+@font-face {
+    font-family: Roboto;
+    src: url('../../fonts/roboto.ttf');
+}
+
+body {
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 100;
+    background-image: url('../../img/background.png');
+
+}
+
+nav {
+    background: #7e4ed3;
+    border-radius: 0 0 1rem 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    display: inline-block
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 1.5rem 1rem;
+    display: block;
+}
+
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 100%;
+}
+
+section.intro {
+    margin: 4rem 0;
+}
+
+section.intro .devices {
+    width: 100%;
+}
+
+h1 {
+   margin: 0.7rem 0;
+}
+
+p {
+    margin-bottom: 1rem;
+}
